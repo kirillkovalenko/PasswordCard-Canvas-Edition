@@ -148,7 +148,7 @@ function onFontLoad(cb,font,size,table,interval)
 			div.textContent=character;
 			var t=table[character];
 			var s=getComputedStyle(div);
-			if(parseInt(s.width)!=t[0]||parseInt(s.height)!=t[1]) return;
+			//if(parseInt(s.width)!=t[0]||parseInt(s.height)!=t[1]) return;
 		}
 		div.parentNode.removeChild(div);
 		clearTimeout(checkInterval);
